@@ -1,0 +1,597 @@
+/* Add a black background color to the top navigation */
+@font-face {
+    font-family: Spartan-League;
+    src: url("leaguespartan-bold.ttf"); /* IE9 Compat Modes */
+    src: url("leaguespartan-bold.woff") format("woff"), /* Modern Browsers */
+         url("leaguespartan-bold.ttf")  format("truetype"), /* Safari, Android, iOS */
+    
+}
+body {
+  font-family: Spartan-league;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 98vw;
+}
+
+.topnav {
+  background-color: Black;
+  overflow: hidden;
+  border-bottom: 0.4vh solid #ffd700;
+}
+
+/* Style the links inside the navigation bar */
+
+/* Style the logo */ 
+
+a .active {
+  max-height: 50px;
+}
+
+.logoImg {
+  max-width: 50px;
+}
+
+.logoText {
+  margin-top: 12px;
+  margin-left: -50px;
+  max-width: 150px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.logo {
+  max-height: 50px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.logo {
+  max-height: 50px;
+}
+
+
+/* Yellow Top border */
+main {
+    border-top: 0.4vh solid #ffd700;
+    border-bottom: 0.4vh solid #ffd700;
+    background-image: url("sanhattan.jpg");
+    background-size: cover;
+    
+}
+
+.trustTitle h4 {
+  margin-bottom: 0;
+}
+
+.grow {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 15vh;
+    margin-right: 12vw;
+    min-width: 20vw;
+    align-content: center;
+    margin-left: 15vw;
+}
+
+.grow h3 {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin: 0;
+    border: 0.4vh solid #fdd209;
+    color: #fdd209;
+    text-justify: center;
+    text-align: center;
+}
+
+ a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+button {
+  cursor: pointer;
+  background: #0564F6;
+  background-color: #0564F6;
+  box-shadow: 5px 10px 8px #888888;
+  padding: 4vh 8vw;
+  margin-bottom: 5vh;
+  border-radius: 15vh;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #0552CA;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-size: cover;
+    align-content: center;
+    text-align: center;
+    color: #cdb193;
+    background-color: black;
+    border-top: 0.4vh solid #ffd700;
+}
+
+footer ul {
+    list-style-type: none;
+    align-items: horizontal;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    padding: 0;
+    margin: 0;
+    color: #ffd700;
+    display: inline;
+    margin-right: 2vw;
+}
+
+footer ul li a {
+  color: #ffd700;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 750px) {
+    body {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "nav"
+        "content"
+        "trustTitle"
+        "enterprises"
+        "text"
+        "planes"
+        "footer";
+        max-width: 98vw;
+    }
+    .topnav {
+        margin: 0;
+        grid-area: nav;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+  }
+    .topnav .active img {
+      max-height: 30px;
+      background-color: black;
+  }
+}
+
+    img {
+      max-width: 98vw;
+    }
+
+    main {
+        min-height: 60vh;
+        grid-area: content;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Costanera_Center_at_evening.jpg/413px-Costanera_Center_at_evening.jpg");
+        background-attachment: scroll;
+        max-width: 98vw;
+    }
+    main h {
+      margin-top: 35vh;
+      margin-left: 5vw;
+      
+    }
+
+    .grow h3 {
+      color: #fdd209;   
+    }
+
+    .trustTitle {
+      grid-area: trustTitle;
+      text-align: center;
+    }
+
+    .confianza {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-area: enterprises;
+      grid-gap: 1vw;
+      text-align: center;
+      margin: auto;
+
+    }
+
+    .imgSize img {
+      max-width: 30vw;
+    }
+
+    .margenSura {
+      margin-top: 3.5vh;
+      margin-left: 1vw;
+    }
+
+    .margenCCU {
+      margin-top: 3.5vh;
+      margin-left: 1vw;
+    }
+
+
+    .text {
+      grid-area: text;
+      text-align: center;
+    }
+
+    .text p {
+      text-align: center;
+    }
+
+    .planes { 
+      grid-area: planes;
+      text-align: center;
+    }
+
+    .main-links {
+      margin-top: 2.5vh;
+    }
+
+    .unete {
+      margin-left: 5vw;
+    }
+
+    
+    .contacto {
+      margin-right: 5vw;
+    }
+
+    #findus {
+      margin-bottom: 1vh;
+    }
+
+    .lineheight {
+      line-height: 5%;
+    }
+
+    .descPlan {
+    font-size: 0.9rem;
+   
+  }
+
+  .planes ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .planes ul li {
+    font-size: 0.8rem;
+    margin: 0;
+    position: relative;
+    margin-right: 5vw;
+  }
+
+  .centeredList {
+    text-align: center;
+  }
+
+  .button {
+    margin: auto;
+  }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    footer ul li {
+        font-size: 4vh;
+    }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* for medium sized devices: */ 
+
+@media only screen and (min-width: 750px) {
+
+  
+  body {
+    max-width: 100vw;
+    margin: auto;
+    align-content: center;
+    display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "nav"
+        "content"
+        "trustTitle"
+        "enterprises"
+        "text"
+        "planes"
+        "footer";
+    }
+
+  .logo {
+    max-height: 50px;
+  }
+
+  .margenwn {
+    margin-top: 2vh;
+  }
+
+  
+  main {
+    min-height: 40vh;
+    max-width: 100vw;
+  }
+ 
+
+  .planes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 99vw;
+    grid-gap: 1vw;
+  }
+
+  .planes div {
+    border: 1px solid #fdd209;
+    grid-gap: 5vw;
+  }
+
+  .planes img {
+    max-width: 48.5vw;
+
+  }
+
+  .planes ul {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5vh;
+  }
+
+  .descPlan {
+    font-size: 0.8rem;
+  }
+
+  button {
+    margin-top: 5vh;
+  }
+
+
+  footer {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  body {
+    max-width: 99vw;
+    margin: auto;
+    align-content: center;
+    display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "nav"
+        "content"
+        "trustTitle"
+        "enterprises"
+        "text"
+        "planes"
+        "footer";
+    }
+
+  
+
+    .logo {
+    margin-left: 2.5vw;
+    max-height: 6vh;
+  }
+
+  .topnav a {
+        display: inline;
+        vertical-align: middle;
+    }
+
+    .logo {
+        display: inline;
+        max-width: 250px;
+    }
+
+    .links {
+    display: flex;
+    float: right;
+    padding-right: 10%;
+}
+    
+    main {
+      min-height: 65vh;
+      min-width: 99vw;
+      margin: auto;
+      padding:0;
+      background-image: url("sanhattan.jpg");
+      color: white;
+    }
+
+    .grow {
+      margin-bottom: 5vh;
+    }
+
+    .grow h3 {
+      padding: 5vh 5vw;
+      width: 15vw;
+      margin: auto;
+      font-size: 2em;
+      color: white;
+      
+    }
+  
+    .trustTitle {
+      font-size: 1.5em;
+    }
+
+  .margenSura {
+    margin-top: 0;
+  }
+
+  .margenCCU img {
+    margin-top: 4vh;
+    height: 114px;
+  }
+
+  .margen4geeks img {
+    height: 300px;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+
+  .planes {
+    margin: auto;
+    max-width: 100vw;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5vw;
+    font-size: 1.5rem;
+  }
+
+  .planes img {
+    max-width: 45vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  .left {
+    border: 1px solid #ffd700;
+    max-width: 45vw;
+    text-align: center;
+  }
+
+  .left ul {
+    text-align: left;
+    margin-left: 31%;
+  }
+
+  .left ul li {
+    margin: auto;
+
+  }
+
+  .right {
+    max-width: 45vw;
+    border: 1px solid #ffd700;
+  }
+
+
+  .right ul {
+    justify-content: start;
+    margin-left: 31%;
+  }
+
+  .right ul li {
+    margin: auto;
+
+  }
+
+  .planes ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 5vh;
+  }
+
+  .button {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  
+
+  footer {
+    max-width: 99vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    background-size: cover;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+
+  
