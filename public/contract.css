@@ -13,10 +13,19 @@ body {
   
 }
 
-.topnav {
-  background-color: Black;
-  overflow: hidden;
-  border-bottom: 0.4vh solid #ffd700;
+nav a {
+  color: white;
+  
+  
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar-brand:hover {
+  background-color: black;
 }
 
 /* Style the links inside the navigation bar */

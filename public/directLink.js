@@ -7,9 +7,10 @@ function expandByUrl() {
     console.log(getTarget);
 
     let targetButton = document.getElementById(getTarget);
+    console.log(targetButton);
     
     targetButton.click();
-
+    console.log("clicked!");
 
 }
 

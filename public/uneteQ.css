@@ -10,10 +10,23 @@ body {
   font-family: Spartan-league;
 }
 
-.topnav {
-  background-color: Black;
-  overflow: hidden;
-  border-bottom: 0.4vh solid #ffd700;
+nav {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar-brand:hover {
+  background-color: black;
 }
 
 /* Style the links inside the navigation bar */
@@ -29,8 +42,6 @@ a .active {
 }
 
 .logoText {
-  margin-top: 12px;
-  margin-left: -50px;
   max-width: 150px;
 }
 
@@ -133,14 +144,14 @@ main {
     text-decoration: line-through;
 }
 
-button {
+main button {
   cursor: pointer;
   background: #0564F6;
   background-color: #0564F6;
   box-shadow: 5px 10px 8px #888888;
 }
 
-button:hover {
+main button:hover {
   background: #0552CA;
   box-shadow: 5px 10px 8px #888888;
 }
@@ -193,23 +204,9 @@ footer a {
         "content"
         "footer";
     }
-    .topnav {
-        margin: 0;
-        grid-area: nav;
-    }
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav .active img {
-      max-height: 30px;
-      background-color: black;
-  }
-  .logoText {
-    display: none;
-  }
-}
+    
+  
+
     main {
         min-height: 80vh;
         grid-area: content;
@@ -217,9 +214,15 @@ footer a {
         background-attachment: scroll;
         
     }
-    main h1 {
+    main h2 {
       text-align: center;
       margin-top: 5vh;
+      font-size: 1.5rem;
+    }
+
+    main h3 {
+      font-size: 1rem;
+      margin: 1vh 2vw;
     }
 
 
@@ -312,12 +315,17 @@ footer a {
         color: white;
     }
 
+    #presencialesLink h3 {
+      margin-top: 5vh;
+    }
+
     .morebuttons {
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 2.5vh;
         color: white;
         margin-bottom: 5vh;
+        margin-top: 5vh;
     }
 
     .morebuttons button {
@@ -349,6 +357,7 @@ footer a {
     }
 
     footer {
+      padding: 5vh 2vw;
       display: grid;
       grid-template-columns: 1fr;
     }
@@ -357,24 +366,7 @@ footer a {
         font-size: 4vh;
         
     }
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 750px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .logoText {
-    display: none;
-  }
-}
+ }
 
 @media only screen and (min-width: 750px) {
   .logo {
@@ -418,12 +410,21 @@ footer a {
   body {
     align-content: center;
     margin: 0;
+    
   }
   
   .logo {
     margin-left: 2.5vw;
     max-height: 6vh;
     
+  }
+
+  main h2 {
+    margin-top: 3vh;
+  }
+
+  .twomonths, .sixmonths, .fourmonthspic {
+    background-color: #ffd700;
   }
 
   .links {
@@ -455,11 +456,17 @@ footer a {
   }
 
   .twomonthspic {
+    background-image: url("7amA1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
       min-height: 50vh;
       max-height: 50vh;
   }
 
   .fourmonthspic {
+    background-image: url("JordanClass.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 50vh;
     max-height: 50vh;
   }
@@ -467,6 +474,9 @@ footer a {
   .sixmonthspic {
     min-height: 50vh;
     max-height: 50vh;
+    background-image: url("EvelynLaughing3p.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
    .twomonths {
@@ -501,10 +511,88 @@ footer a {
         max-width: 20vw;
     }
 
+    .tachado {
+      font-size: 0.7rem;
+    }
+
+    .mes {
+      font-size: 0.9rem;
+    }
+
+    .compra {
+        position: relative;
+        padding: 1.5vh;
+        margin: 2vh;
+        text-align: center;
+        align-content: center;
+        background-color: #0564F6;
+        border-radius: 15vh;
+        width: 95%;
+        font-size: 15px;
+        color: white;
+        font-weight: bolder;
+        border-width: 0;
+        text-decoration: none;
+        margin-bottom: 5vh;
+    }
+
+    .compra a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #presencialesLink h3 {
+      margin-top: 5vh;
+    }
+
+    .morebuttons {
+        
+        color: white;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+
+    .morebuttons button {
+        margin-left: 2vw;
+        position: relative;
+        padding: 2vh;
+        text-align: center;
+        align-content: center;
+        background-color: #171717;
+        border-radius: 15vh;
+        width: 95%;
+        font-size: 15px;
+        color: white;
+        font-weight: bolder;
+        border-width: 0;
+
+    }
+
+    .compra {
+      font-family: Spartan-league;
+    }
+
+    .morebuttons button:hover {
+      background-color: #000000;
+    }
+
+    #findus {
+      margin-bottom: 1vh;
+      font-size: 1.5rem;
+    }
+
+    footer ul li a{
+      font-size: 2rem;
+      margin-right: 1vw;
+    }
+
+    .lineheight {
+      line-height: 5%;
+    }
+
     footer {
-        padding-top: 2.5vh;
-        padding-bottom: 0;
-        background-size: cover;
+      padding: 5vh 5vw;
+      background-size: cover;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
   }

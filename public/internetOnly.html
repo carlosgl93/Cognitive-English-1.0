@@ -24,9 +24,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -56,19 +54,29 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PP55WKL" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active"><img class="logoImg" src="logoImg.png" alt=""></a>
-        <a href="index.html" class="active"><img class="logoText" src="logoText.png" alt=""></a>
-        <div class="links">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a class="margenwn" href="internetOnly.html">Planes</a>
-            <a class="margenwn" href="contacto.html">Contacto</a>
-            <a class="margenwn" href="b2b.html">Corporativo</a>
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="index.html"><img class="logoText" src="logoText.png" alt=""></a>
+        <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="internetOnly.html">Planes <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="b2b.html">Corporativo</a>
+                </li>
+            </ul>
     
         </div>
-    </div>
+    </nav>
     <main>
         <div class="planes">
             <h2>Planes Internet Only</h2>
@@ -86,7 +94,7 @@
                         <h5>Starter Pack</h5>
                         <ul class="centeredList">
                             <li>~ 37 horas</li>
-                            <a href="/elProgramaCognitive.html#explicandoCognostic" data-toggle="collapse" data-target="#explicandoCognostic">
+                            <a href="/elProgramaCognitive.html#explicandoCognostic">
                                 <li>Evaluación <span class="italic">Cognostic</span> </li>
                             </a>
                             <li>4 sesiones por semana</li>
@@ -199,8 +207,8 @@
 
             </div>
 
-            <a href="planesQ.html">
-                <h2>Planes Presenciales</h2>
+            <a id="presencialesLink" href="planesQ.html">
+                <h3>Planes Presenciales</h3>
             </a>
 
             <div class="morebuttons">
@@ -244,6 +252,8 @@
     </footer>
 
     <script src="planes.js"></script>
+    <script> src = "directLink.js"</script>
+
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/7.10.0/firebase-app.js"></script>
@@ -254,6 +264,17 @@
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 </body>
 

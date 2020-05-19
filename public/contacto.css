@@ -12,10 +12,26 @@ body {
   font-family: Spartan-league;
   
 }
-.topnav {
-  background-color: Black;
-  overflow: hidden;
+
+nav {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
   
+  
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar-brand:hover {
+  background-color: black;
 }
 
 /* Style the links inside the navigation bar */
@@ -31,8 +47,7 @@ a .active {
 }
 
 .logoText {
-  margin-top: 12px;
-  margin-left: -50px;
+  
   max-width: 150px;
 }
 
@@ -142,14 +157,15 @@ footer ul li a {
       max-height: 30px;
       background-color: black;
   }
-  .logoText {
-    display: none;
-  }
+  
 }
     main {
         min-height: 80vh;
         grid-area: content;
-        
+    }
+
+    #form {
+      margin: 5vh 0;
     }
     
     #findus {
@@ -159,29 +175,17 @@ footer ul li a {
     footer {
       display: grid;
       grid-template-columns: 1fr;
+      padding: 5vh 2vw;
+    }
+
+    footer div {
+      margin-bottom: 1vh;
     }
 
     footer ul li {
         font-size: 4vh;
     }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 750px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .logoText {
-    display: none;
-  }
-}
 
 /* for medium sized devices: */ 
 
@@ -190,9 +194,6 @@ footer ul li a {
     max-height: 50px;
   }
 
-  .logoText {
-    display: none;
-  }
 
   .margenwn {
     margin-top: 2vh;
@@ -240,6 +241,10 @@ footer ul li a {
    
     align-content: center;
     margin: 0;
+  }
+
+  #form {
+    margin-top: 5vh;
   }
 
   .logo {

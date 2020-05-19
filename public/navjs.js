@@ -52,8 +52,9 @@ window.onload = function() {
         
     }
 
-    let boldParragraph = document.getElementsByClassName("font-weight-normal");
-    boldParragraph.style.fontWeight = "normal";
+ 
 
 }
+
+
 
