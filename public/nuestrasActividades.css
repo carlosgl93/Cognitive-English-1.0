@@ -37,6 +37,22 @@ nav a:hover {
   background-color: black;
 }
 
+.nivelButton {
+  cursor: pointer;
+  background: #0564F6;
+  background-color: #0564F6;
+  box-shadow: 5px 10px 8px #888888;
+  border-radius: 15vh;
+  color: white;
+  padding: 2vh 2vw;
+  margin-left: 2vw;
+}
+
+.nivelButton:hover {
+  background: #0552CA;
+  box-shadow: 5px 10px 8px #888888;
+}
+
 
 
 p {

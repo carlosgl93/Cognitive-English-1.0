@@ -260,12 +260,13 @@ a .active {
         grid-row-start: 1;
         grid-row-end: 2;
         margin: 2.5vh 10vw;
+        margin-bottom: 0;
         margin-top: 2.5vh;
         margin-right: 0vw;
         padding-right: 10vw;
         border-bottom: 0;
         border-right: 0.7vw solid #ffd700;
-        margin-top: 0;
+        
     }
 
     .speaking {
@@ -483,11 +484,6 @@ footer a {
 
 }
 
-@media only screen and (min-width: 992px) {
-
-   
-}
-
 
 @media only screen and (min-height: 666px) and (max-height: 815px)  {
 
@@ -532,10 +528,13 @@ body, .firstSection, .secondSection, .multiContainer {
   grid-template-columns: 100vw;
 }
 
-
+.navbar-brand {
+  margin-right: 0;
+}
 
 .logoText {
-  margin-left: 25px;
+  margin-left: 1vw;
+  margin-right: 0;
   margin-bottom: 10px;
   max-width: 150px;
   margin-top: 15px;
@@ -731,7 +730,7 @@ div .ftext {
   .secondSection {
     display: grid;
     grid-template-columns: 100vw 0;
-    grid-template-rows: 50vh;
+    grid-template-rows: 35vh;
     grid-template-areas: 
     "dicho"
     "speaking"
@@ -742,6 +741,7 @@ div .ftext {
     grid-area: "secondSection";
     position: relative;
     margin: auto;
+    text-align: center;
   }
 
   .firstSection h1, .ftext {
@@ -774,13 +774,13 @@ div .ftext {
       margin: auto;
   }
 
-  .secondSection > div {
-    margin: 2.5vh 2.5vw;
-    padding: 0;
+  #elDicho {
+    margin-bottom: 0;
+    margin: 0 1vw;
   }
 
-  .secondSection > div > img {
-    margin: 0;
+  .speaking {
+    margin-bottom: 2vh;
   }
 
   .dicho {
@@ -794,7 +794,8 @@ div .ftext {
       border-right: 0;
       margin-left: 0;
       padding-right: 0;
-      margin: 0 2.5vw;
+      margin-bottom: -5vh;
+      max-height: 200px;
   }
 
   .dicho h2 {
@@ -807,16 +808,27 @@ div .ftext {
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin:0;
+    margin-left: 0; 
+    margin-bottom: 5vh;
+    text-align: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
   }
 
   .practice {
+    text-align: center;
     grid-area: "practice";
+    padding-left: 0;
     grid-column-start: 0;
     grid-column-end: 1;
     grid-row-start: 3;
     grid-row-end: 4;
     border: 0;
+
+  }
+
+  .practice > p {
+    padding: 1vh 1.5vw;
   }
 
   .lifting {
@@ -825,15 +837,25 @@ div .ftext {
     grid-column-end: 1;
     grid-row-start: 4;
     grid-row-end: 5;
+    padding-bottom: 5vh;
   }
 
   .motivation {
     grid-area: "motivation";
+    margin-top: 5vh;
     grid-column-start: 0;
     grid-column-end: 1;
     grid-row-start: 5;
     grid-row-end: 6;
     border: 0;
+    margin: 2.5vh 0;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .motivation > h2, p {
+    text-align: center;
+    padding: 1vh 1.5vw;
   }
 
   .running {
@@ -842,6 +864,7 @@ div .ftext {
     grid-column-end: 1;
     grid-row-start: 7;
     grid-row-end: 8;
+    margin: 0;
   }
 
    .speaking, .lifting {
@@ -868,10 +891,8 @@ div .ftext {
       font-size: 4vh;
     }
 
-
-
   .fireworks {
-    width: 25%;
+    min-width: 7.5vw;
   }
 
   body {
@@ -923,6 +944,14 @@ div .ftext {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+  .logoText {
+    margin: 0;
+  }
+
+  .lifting {
+    margin-bottom: 5vh;
+  }
 
   footer ul li {
     margin: 2.5vh 0.5vw;
