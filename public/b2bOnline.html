@@ -4,12 +4,12 @@
 <head>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-PP55WKL');</script>
     <!-- End Google Tag Manager -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -22,10 +22,12 @@
         gtag('config', 'UA-159371197-2');
     </script>
 
+
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="b2b.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -44,6 +46,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <script type="text/javascript" src="navjs.js"></script>
+    <script src="https://kit.fontawesome.com/45f4934ac4.js" crossorigin="anonymous"></script>
     <title>Cognitive English</title>
 </head>
 
@@ -62,45 +65,96 @@
         </button>
     
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="align-items: flex-start; text-align:left;">
-                <a class="nav-link" href="internetOnly.html">
-                    <li class="nav-item active">
-                        Planes
-                    </li>
-                </a>
-                <a class="nav-link" href="contacto.html">
-                    <li class="nav-item">
-                        Contacto
-                    </li>
-                </a>
-                <a class="nav-link" href="b2bOnline.html">
-                    <li class="nav-item">
-                        Corporativo
-                    </li>
-                </a>
-    
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="internetOnly.html">Planes <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="b2bOnline.html">Corporativo</a>
+                </li>
             </ul>
-    
+
         </div>
     </nav>
-    <main>
+    <main class="grow">
+        <div class="empty1"></div>
+        <div class="firstTitle">
+            <h3>GROW YOUR ENGLISH <br> <br>GROW YOUR BUSINESS</h3>
+        </div>
+        <div class="empty1"></div>
 
-        <div id="form">
+    </main>
 
-            <h2>¿Necesitas preparte para un examen específico?</h2>
-            <h3>Dejanos tus datos y cuentanos que quieres preparar</h3>
+    <div class="trustTitle">
+        <h2>Algunos de los que han confiado en nosotros</h2>
+    </div>
 
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-            <script>
-                hbspt.forms.create({
-                    portalId: "5256290",
-                    formId: "47784354-989a-4185-b5d3-d2414b3eeee3"
-                });
-            </script>
+    <div class="confianza">
+        <div class="imgSize margenSura sura"></div>
+        <div class="imgSize margenCCU ccu"></div>
+        <div class="imgSize margen4geeks geeks"></div>
+    </div>
+
+    <div class="limits">
+        <h2>Sin limitaciones</h2>
+        <p style="text-align: center;">¿Qué mejor que poder conectar tu empresa
+            con cualquiera en el mundo?
+        </p>
+
+        
+
+    </div>
+
+    
+
+    <h2 class="text">Nuestros planes para empresas </h2>
+    <div class="planes">
+        
+        <div class="left">
+            <img src="JordanClass.jpg" alt="Class at CE Headquarters">
+            <h3>Plan Abierto Online</h3>
+            <p class="descPlan">
+                Hoy en dia el principal problema de las empresas es adaptarse 
+                a las diversas situaciones que el universo nos presenta, es por 
+                esto que nosotros continuamos otorgando valor con nuestros
+                cursos online.
+            </p>
+
+            <ul>
+                <li>Horario totalmente flexible</li>
+            </ul>
+
 
         </div>
 
-    </main>
+        <div class="right">
+            <img src="maxymClass.jpg" alt="Class at Wework">
+            <h3>Plan Online Cerrado</h3>
+            <p class="descPlan">
+                ¿Qué mejor que aprender inglés y generar un sentimiento
+                de equipo al equivocarse en conjunto y ayudarse entre ellos para 
+                aprender como equipo.
+            </p>
+            <ul class="centeredList">
+
+                <li id="fijo">Horario fijo</li>
+
+            </ul>
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="button">
+        <a href="b2bcontact.html"><button>Quiero una cotización</button></a>
+    </div>
+
     <footer>
         <div class="contacto">
             <a href="tel:+56933963414">
@@ -139,22 +193,17 @@
         </div>
     
     </footer>
+
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/7.10.0/firebase-app.js"></script>
-    
+
     <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
+     https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="/__/firebase/7.10.0/firebase-analytics.js"></script>
-    
+
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
-
-
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer
-        src="http:://js.hs-scripts.com/5256290.js"></script>
-    <!-- End of HubSpot Embed Code -->
-    <script src="https://kit.fontawesome.com/45f4934ac4.js" crossorigin="anonymous"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -166,6 +215,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

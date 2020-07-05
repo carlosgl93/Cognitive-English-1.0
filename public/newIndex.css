@@ -16,6 +16,7 @@ body {
 
 nav {
   background-color: black;
+  text-align: left;
 }
 
 nav a {
@@ -49,16 +50,6 @@ a .active {
   max-height: 50px;
 }
 
-.topnav .margenwn {
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 30px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
 .links {
   margin-left: 150px;
 }
@@ -68,17 +59,6 @@ a .active {
 .links a:hover {
   background-color: white;
   color: black;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: black;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
 }
 
 .logoLink:hover {
@@ -133,11 +113,6 @@ a .active {
 .alertText {
   margin-top: 20px;
 }
-
-.topnav a {
-        display: inline;
-        vertical-align: middle;
-    }
 
     .logo {
         display: inline;
@@ -231,13 +206,15 @@ a .active {
     
 }
 
+
     .rightImage {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 4;
         background-image: url("EvelynAndJhonny.jpg");
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
         margin: 0;
     }
 
@@ -348,7 +325,7 @@ footer ul {
 
 footer ul li {
     padding: 0;
-    margin: 0;
+    margin: 0 1vw;
     color: #ffd700;
     display: inline;
     font-size: 1.5rem;
@@ -379,9 +356,6 @@ footer a {
     }
 
  main {
-  margin: 5vh 10vw;
-  display: grid;
-  grid-template-columns: 1fr;
   grid-template-areas: 
   "firstSection"
   "multiContainer";
@@ -396,51 +370,7 @@ footer a {
       padding: 0;
     }
 
-    .topnav {
-        margin: 0;
-        grid-area: nav;
-    }
-    .topnav a:not(:first-child) {display: none;}
 
-    
-
-    .topnav a.icon {
-      float: right;
-      display: block;
-  }
-    .topnav .active img {
-      max-height: 30px;
-      background-color: black;
-  }
-
-
-  
-
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 770px) {
-
-  .topnav {
-    max-height: 58px;
-  }
-  .topnav.responsive {
-    position: relative;
-    max-height: 300px;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-   
-
-
-}
 
 @media only screen and (min-width: 771px) {
   .logo {
@@ -512,6 +442,8 @@ footer a {
     font-size: 1.4rem;
   }
 
+  
+
 
 
 
@@ -544,6 +476,14 @@ body, .firstSection, .secondSection, .multiContainer {
   color: white;
   background-color: black;
 }
+
+.navbar-toggler {
+    padding: 0.1em 0.5em;
+  }
+  .navbar-toggler-icon {
+    
+    width: 1em;
+  }
 
 .links {
   margin: 0;
@@ -884,8 +824,24 @@ div .ftext {
    footer {
       display: grid;
       grid-template-columns: 1fr;
+      grid-template-areas: 
+      "contacto"
+      "address"
+      "findus";
       padding: 5vh 0;
     } 
+
+    .lineheight {
+      grid-area: "contact";
+    }
+
+    .direccion {
+      grid-area: "address";
+    }
+
+    #findus {
+      grid-area: "findus";
+    }
 
     footer ul li {
       font-size: 4vh;

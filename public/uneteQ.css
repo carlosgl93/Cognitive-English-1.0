@@ -157,8 +157,6 @@ main button:hover {
 }
 
 
-
-
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -495,16 +493,22 @@ footer a {
     }
 
     .centeredList li {
-        
+        line-height: 5vh;
         text-align: center;
         justify-content: left;
         list-style-type: none;
     }
 
+    .sabermas {
+  margin-bottom: 5vh;
+  color: black;
+}
+
     .morebuttons  {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-start: center;
+        grid-column-start: initial;
+        margin-right: 2vw;
     }
 
     .morebuttons button {

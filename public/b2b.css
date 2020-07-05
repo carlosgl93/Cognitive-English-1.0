@@ -11,13 +11,18 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 98vw;
+  max-width: 100vw;
+}
+
+body div {
+  max-width: 100vw;
 }
 
 nav {
   background-color: black;
   margin: 0;
   padding: 0;
+  max-width: 100vw;
 }
 
 nav a {
@@ -158,7 +163,7 @@ footer a {
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 750px) {
     body {
-        margin: 0;
+        margin: none;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -173,9 +178,13 @@ footer a {
 
     }
 
-  .navbar-toggler {
-      margin-right: 4vw;
-    }
+  nav {
+    max-width: 100vw;
+  }
+
+  nav div {
+    margin-right: 0;
+  } 
   
 
     .trustTitle, .confianza, .text, .planes, .button  {
@@ -203,6 +212,7 @@ footer a {
 
     .grow {
       margin: 0;
+      max-width: 100vw;
     }
 
     .grow h3 {
@@ -212,38 +222,60 @@ footer a {
   
 
     .trustTitle {
+      display: none;
       grid-area: trustTitle;
       text-align: center;
+      margin: 5vh 0;
     }
 
     .confianza {
-      display: grid;
+      display: none;
       grid-template-columns: 1fr 1fr 1fr;
       grid-area: enterprises;
       grid-gap: 1vw;
       text-align: center;
-      margin: auto;
+      margin: 0;
 
     }
+
+    .sura {
+    background-image: url("suraLogo.png");
+    background-size: contain;
+    background-repeat: none;
+    min-height: 50px;
+    max-height: 50px;
+  }
+
+  .ccu {
+    background-image: url("ccuLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 50px;
+    max-height: 50px;
+  }
+
+  .geeks {
+    background-image: url("geeksLogo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 50px;
+    max-height: 50px;
+  }
+
+
+
+  
 
     .imgSize img {
       max-width: 30vw;
     }
 
-    .margenSura {
-      margin-top: 3.5vh;
-      margin-left: 1vw;
-    }
-
-    .margenCCU {
-      margin-top: 3.5vh;
-      margin-left: 1vw;
-    }
 
 
     .text {
       grid-area: text;
       text-align: center;
+      margin: 0;
     }
 
     .text p {
@@ -253,6 +285,7 @@ footer a {
     .planes { 
       grid-area: planes;
       text-align: center;
+      margin: 0;
     }
 
     .main-links {
@@ -265,6 +298,7 @@ footer a {
 
     .limits {
       text-align: center;
+      margin: 5vh 0;
     }
 
     
@@ -285,12 +319,16 @@ footer a {
    
   }
 
-  .left h3 {
-    margin: 5vh 2vw;
+  .left, .right {
+    text-align: center;
   }
 
-  .right h3 {
-    margin: 5vh 2vw;
+  .left h3, .right h3 {
+    margin-top: 5vh;
+  }
+
+  .left img, .right img {
+    margin: 1vh 0;
   }
 
   .left ul {
@@ -437,7 +475,7 @@ footer a {
       min-width: 100vw;
       margin: auto;
       padding:0;
-      background-image: url("sanhattan.jpg");
+      background-image: url("santiagodesktop.jpg");
       color: white;
     }
 
@@ -462,11 +500,13 @@ footer a {
   .confianza {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5vw;
   }
 
   .sura {
     background-image: url("suraLogo.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     min-height: 300px;
   }
 
@@ -487,7 +527,7 @@ footer a {
   .margenSura {
     margin-top: 0;
     margin-bottom: 50px;
-    margin-right: 5vw;
+    
   }
 
   .margenCCU {
@@ -495,7 +535,7 @@ footer a {
   }
 
   .margen4geeks {
-    margin-left: 5vw;
+    
   }
 
   .limits {
