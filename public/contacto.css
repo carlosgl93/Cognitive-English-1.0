@@ -133,6 +133,15 @@ footer ul li a {
   color: #ffd700;
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.wwuSpacing {
+  margin-top: 1vh;
+}
+
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 750px) {

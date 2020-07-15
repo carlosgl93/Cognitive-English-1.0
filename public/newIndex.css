@@ -314,6 +314,11 @@ a .active {
     color: #cdb193;
     background-color: black;
     padding: 5vh 0;
+    font-family: Spartan-League;
+}
+
+.footerlink {
+  font-size: 1rem;
 }
 
 footer ul {
@@ -321,24 +326,30 @@ footer ul {
     align-items: horizontal;
     margin: 0;
     padding: 0;
+    padding-top: 2vh;
 }
 
 footer ul li {
     padding: 0;
-    margin: 0 1vw;
+    margin: 0vh 1vw;
     color: #ffd700;
     display: inline;
-    font-size: 1.5rem;
+    font-size: 2rem;
     
 }
 
 footer ul li a {
   color: #ffd700;
+  font-size: 2rem;
 }
 
 footer a {
   text-decoration: none;
   color: white;
+}
+
+.wwuSpacing {
+  margin-top: 3vh;
 }
 
 
@@ -924,4 +935,4 @@ div .ftext {
 
 
 
-}
+}}

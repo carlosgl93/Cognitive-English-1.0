@@ -6,6 +6,13 @@
          url("leaguespartan-bold.ttf")  format("truetype"), /* Safari, Android, iOS */
     
 }
+
+@font-face {
+    font-family: Montserrat;
+    src: url("Montserrat-Regular.ttf"); /* IE9 Compat Modes */
+
+}
+
 body {
   font-family: Spartan-league;
 }
@@ -114,7 +121,14 @@ main {
   font-style: italic;
 }
 
+.twodetails h2, h5, .sixdetails h2, h5 {
+  color: #0552CA;
+}
 
+.twodetails ul li, .sixdetails ul li  {
+  color: black;
+  font-family: Montserrat;
+}
 
 .asterisk {
   color: #0552CA;
@@ -191,6 +205,10 @@ footer a {
   color: white;
 }
 
+.wwuSpacing {
+  margin-top: 3vh;
+}
+
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 750px) {
@@ -227,7 +245,14 @@ footer a {
     .table-wrapper h1 {
       font-size: 1.8rem;
     }
-    
+
+    .twomonths, .sixmonths {
+      padding: 0 auto;
+    }
+
+    .twodetails, .sixdetails {
+      padding-right: 5vw;
+    }
 
     .twomonths {
     min-height: 70vh;
@@ -295,6 +320,7 @@ footer a {
         position: relative;
         padding: 1.5vh;
         margin: 2vh;
+        margin-right: 5vw;
         text-align: center;
         align-content: center;
         background-color: #0564F6;
@@ -350,19 +376,51 @@ footer a {
       margin-bottom: 1vh;
     }
 
-    .lineheight {
-      line-height: 5%;
+    .centeredList {
+      line-height: 2.25;
     }
 
     footer {
-      padding: 5vh 2vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-size: cover;
+    align-content: center;
+    text-align: center;
+    color: #cdb193;
+    background-color: black;
+    padding: 5vh 0;
+    font-family: Spartan-League;
+}
+
+.footerlink {
+  font-size: 1rem;
+}
+
+footer ul {
+    list-style-type: none;
+    align-items: horizontal;
+    margin: 0;
+    padding: 0;
+    padding-top: 2vh;
+}
+
+footer ul li {
+    padding: 0;
+    margin: 0vh 1vw;
+    color: #ffd700;
+    display: inline;
+    font-size: 2rem;
+    
+}
+
+footer {
       display: grid;
       grid-template-columns: 1fr;
-    }
+      padding: 5vh 0;
+    } 
 
     footer ul li {
         font-size: 4vh;
-        
     }
  }
 
@@ -400,6 +458,8 @@ footer a {
     padding-top: 5vh;
     padding-bottom: 10vh;
   }
+
+
 
 }
 
@@ -526,7 +586,8 @@ footer a {
     .compra {
         position: relative;
         padding: 1.5vh;
-        margin: 2vh;
+        margin: 2vh 0;
+        margin-right: 2vw;
         text-align: center;
         align-content: center;
         background-color: #0564F6;

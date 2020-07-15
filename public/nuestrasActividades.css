@@ -1,6 +1,6 @@
 
 @font-face {
-    font-family: Spartan-League;
+    font-family: Montserrat;
     src: url("leaguespartan-bold.ttf"); /* IE9 Compat Modes */
     src: url("leaguespartan-bold.woff") format("woff"), /* Modern Browsers */
          url("leaguespartan-bold.ttf")  format("truetype"), /* Safari, Android, iOS */
@@ -9,16 +9,19 @@
 @font-face {
     font-family: Montserrat;
     src: url("Montserrat-Regular.ttf"); /* IE9 Compat Modes */
-    src: url("leaguespartan-bold.ttf")  format("truetype")
 
 }
 
 
 body {
-  font-family: Spartan-league;
+  font-family: Montserrat;
   margin: 0;
   font-weight: normal!important;
   
+}
+
+body, main, a, p, li, button, h5 {
+  font-family: Montserrat;
 }
 
 nav {
@@ -51,7 +54,7 @@ nav a:hover {
   color: white;
   padding: 2vh 1vw;
   margin: 1vh 1vw;
-  
+  font-size: 2rem;
 }
 
 .nivelButton:hover {
@@ -61,11 +64,21 @@ nav a:hover {
 
 .jumbotron {
   margin-top: 2rem;
+  background-color: #fdd209;
+  justify-content: center;
+  text-align: center;
+
 }
 
-.card-header {
-  max-height: 6.66vh ;
+button h5 {
+  color: black;
 }
+
+.card-body {
+  background-color: white;
+}
+
+
 
 .card-body {
   padding-bottom: 0;
@@ -78,7 +91,15 @@ nav a:hover {
 }
 
 button {
-  font-family: Spartan-League;
+  font-family: Montserrat;
+}
+
+.planesbutton:hover, .nivelButton:hover {
+  cursor: pointer;
+}
+
+.header {
+  font-weight: bold;
 }
 
 p {
@@ -157,13 +178,25 @@ a .active {
   max-height: 50px;
 }
 
+.container h2 {
+  margin: 2vh 0vw;
+}
+
+.planesbutton {
+  margin: 2.5vh 0;
+  border-radius: 5vh;
+  padding: 5vh 1vw;
+  background-color: #0564F6;
+  color: white;
+}
+
 footer {
     border-top: 0.4vh solid #ffd700;
 }
 
 .card-body {
     text-align: left;
-    font-family: mon;
+    font-family: Montserrat;
 }
 
 .card-header {
@@ -190,6 +223,12 @@ footer {
     text-align: center;
     color: #cdb193;
     background-color: black;
+    padding: 5vh 0;
+    font-family: Montserrat;
+}
+
+.footerlink {
+  font-size: 1rem;
 }
 
 footer ul {
@@ -197,19 +236,21 @@ footer ul {
     align-items: horizontal;
     margin: 0;
     padding: 0;
+    padding-top: 2vh;
 }
 
 footer ul li {
     padding: 0;
-    margin: 0;
+    margin: 0vh 1vw;
     color: #ffd700;
     display: inline;
-    margin-right: 1vw;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    
 }
 
 footer ul li a {
   color: #ffd700;
+  font-size: 2rem;
 }
 
 footer a {
@@ -217,6 +258,9 @@ footer a {
   color: white;
 }
 
+.wwuSpacing {
+  margin-top: 3vh;
+}
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -235,9 +279,26 @@ footer a {
     padding: 0.1em 0.5em;
   }
   .navbar-toggler-icon {
-    
     width: 1em;
   }
+
+
+  .card, .card-header, .card-body h5, ul li, p, a {
+    font-size: 40px;
+    text-align: justify;
+  }
+
+
+  button h5 {
+    font-size: 40px;
+  }
+
+  #explicando4sesions {
+    font-size: 2.5rem;
+    margin: auto;
+    font-family: Montserrat;
+  }
+
 
 
    footer {
@@ -269,11 +330,35 @@ footer a {
     
     width: 1em;
   }
+
+  h2 button {
+    font-size: 2rem;
+  }
+
+  .btn {
+    vertical-align: text-top;
+    font-size: 2rem;
+  }
+
+  .card {
+    font-size: 3rem;
+  }
+
+  main .card, .card-header, .card-body h5, li, p {
+    font-size: 2rem;
+  }
+
+#explicando4sesions {
+    font-size: 4rem;
+    margin: auto;
+    font-family: Montserrat;
+  }
+
   
   
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 350px) {
   
 .logo {
   max-height: 50px;
@@ -285,6 +370,19 @@ footer a {
 
   .margenwn {
     margin-top: 2vh;
+  }
+
+  .logoText {
+    max-width: 250px;
+  }
+
+  .logoImg {
+    max-width: 75px;
+  }
+
+  .nav-link {
+    font-size: 2rem;
+    font-family: Montserrat;
   }
 
   main {
@@ -308,6 +406,31 @@ footer a {
     border-right: 0.75vw solid #ffd700;  
   }
 
+  main > .card, .card-body h5, p, li {
+    font-size: 2rem;
+  }
+
+  .card-header h2 button h5 {
+    font-size: 1.5rem;
+  }
+
+  #explicando4sesions {
+    font-size: 2rem;
+    margin: auto;
+    font-family: Montserrat;
+  }
+
+  nav li {
+    font-size: 1rem;
+  }
+
+  #explicando4sesions {
+    font-size: 2rem;
+    margin: auto;
+    font-family: Montserrat;
+  }
+
+
   footer {
     padding-top: 5vh;
     padding-bottom: 10vh;
@@ -322,6 +445,20 @@ footer a {
     display: flex;
     float: right;
 }
+
+#explicando4sesions {
+    font-size: 2.5rem;
+    margin: auto;
+    font-family: Montserrat;
+  }
+
+
+#explicando4sesions {
+    font-size: 2.5rem;
+    margin: auto;
+    font-family: Montserrat;
+  }
+
 
 
 }
@@ -359,11 +496,30 @@ footer a {
         margin: 0 15%;
     }
 
+    .card-header {
+      max-height: 10vh ;
+}
+
     .coursesList {
         text-align: center;
         
         
     }
+
+    .card, .card-header, .card-body h5, li, p {
+    font-size: 1.5rem;
+  }
+
+  #explicando4sesions {
+    font-size: 2.5rem;
+    margin: auto;
+    font-family: Montserrat;
+  }
+
+  #explicando4sesions h5 {
+    font-size: 2rem;
+  }
+
     
 
 footer {

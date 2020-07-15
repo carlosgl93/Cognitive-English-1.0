@@ -193,7 +193,6 @@ footer {
     text-align: center;
     color: #cdb193;
     background-color: black;
-    padding: 5vh 0;
 }
 
 footer ul {
@@ -205,11 +204,9 @@ footer ul {
 
 footer ul li {
     padding: 0;
-    margin: 0 1vw;
+    margin: 0;
     color: #ffd700;
     display: inline;
-    font-size: 4vh;
-
     
 }
 
@@ -221,7 +218,6 @@ footer a {
   text-decoration: none;
   color: white;
 }
-
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

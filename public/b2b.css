@@ -131,8 +131,6 @@ footer {
     text-align: center;
     color: #cdb193;
     background-color: black;
-    border-top: 0.4vh solid #ffd700;
-    margin: 5vh 2vw;
 }
 
 footer ul {
@@ -147,7 +145,7 @@ footer ul li {
     margin: 0;
     color: #ffd700;
     display: inline;
-    margin-right: 2vw;
+    
 }
 
 footer ul li a {
