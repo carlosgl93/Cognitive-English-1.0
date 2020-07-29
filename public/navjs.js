@@ -14,7 +14,7 @@ function myFunction() {
 
 window.onload = function() {
  
-    let nextCourseDate = moment().locale("es").to([2020, 6, 27]);
+    let nextCourseDate = moment().locale("es").to([2020, 7, 24]);
     let timeRemainingPlace1 = document.getElementById("timeRemaining");
     let bottomTimeRemaining = document.getElementById("bottomTimeRemaining");
     console.log(nextCourseDate);
